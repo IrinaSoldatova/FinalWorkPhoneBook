@@ -1,5 +1,6 @@
 import model
 import text
+import controller
 
 
 def main_menu() -> int:
@@ -48,6 +49,8 @@ def input_data(message: str) -> str:
 def input_valid_contact_id(promt):
     while True:
         c_id = input_data(promt)
+        if c_id == '0':
+            controller.start_app()
         if not c_id.isdigit():
             print_message(text.invalid_contact_id_message)
             continue

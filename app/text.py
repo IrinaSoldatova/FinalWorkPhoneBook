@@ -33,7 +33,7 @@ def contacts_not_found(word: str) -> str:
     return f'Контакт с данными {word} не найден!'
 
 
-input_id_change_contact = 'Введите ID контакта, который хотите изменить: '
+input_id_change_contact = 'Введите ID контакта, который хотите изменить или 0, чтобы вернуться в главное меню: '
 
 change_contact = ['Введите новую фамилию или оставьте без изменений: ',
                   'Введите новое имя или оставьте без изменений: ',
@@ -47,7 +47,7 @@ def contact_changed_successful(name: list) -> str:
 
 invalid_contact_id_message = 'Некорректный ID контакта, попробуйте еще раз.'
 
-input_id_delete_contact = 'Введите ID контакта, который хотите удалить: '
+input_id_delete_contact = 'Введите ID контакта, который хотите удалить или 0, чтобы вернуться в главное меню: '
 
 
 def contact_deleted_successful(name: list) -> str:
