@@ -54,4 +54,4 @@ def contact_deleted_successful(name: list) -> str:
     return f'Контакт {' '.join(name)} успешно удален!'
 
 
-good_bay = 'До новых вcтреч!'
+good_bye = 'До новых вcтреч!'
